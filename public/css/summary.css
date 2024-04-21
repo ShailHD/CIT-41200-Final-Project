@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background: #f5f7fa; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+h1 {
+    color: #0b3d91; /* Dark blue for contrast */
+    text-align: center;
+}
+
+label {
+    margin-top: 15px;
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px #9ecaed; /* Highlight with a blue glow */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #4caf50; /* Green color for go/submit */
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #45a049; /* Darker green on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Slight lift */
+}
+
+button:active {
+    transform: translateY(1px); /* Push down */
+}
+
+/* Add some styling for the header and main content area */
+header {
+    background-color: #0b3d91; /* Match this with your AI/electrification theme */
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav ul {
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Style for aside if you have images or additional content there */
+aside {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

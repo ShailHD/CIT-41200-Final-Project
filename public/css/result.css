@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+.result-section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+h2, .eligibility {
+    margin: 10px 0;
+}
+
+#map {
+    height: 250px; /* Adjust as necessary */
+    width: 100%;
+    margin: 20px 0;
+    background-color: #e9e9e9; /* Placeholder color */
+    position: relative; /* For the map marker to be positioned */
+}
+
+/* Placeholder for the map marker */
+#map:before {
+    content: '📍';
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#car-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.actions button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #3069f0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    font-size: 0.8em;
+}
+
+/* You can add more CSS rules to better match your design */

@@ -1,0 +1,52 @@
+[debug] [2024-04-19T16:50:16.253Z] ----------------------------------------------------------------------
+[debug] [2024-04-19T16:50:16.255Z] Command:       /usr/local/nvm/versions/node/v20.11.1/bin/node /usr/local/nvm/versions/node/v20.11.1/bin/firebase deploy --only functions
+[debug] [2024-04-19T16:50:16.255Z] CLI Version:   13.5.2
+[debug] [2024-04-19T16:50:16.255Z] Platform:      linux
+[debug] [2024-04-19T16:50:16.256Z] Node Version:  v20.11.1
+[debug] [2024-04-19T16:50:16.256Z] Time:          Fri Apr 19 2024 16:50:16 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-04-19T16:50:16.256Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-19T16:50:16.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-19T16:50:16.357Z] Error getting account credentials.
+[debug] [2024-04-19T16:50:16.357Z] [iam] checking project sp24-finalproject-teamorange for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-04-19T16:50:16.359Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sp24-finalproject-teamorange:testIamPermissions [none]
+[debug] [2024-04-19T16:50:16.359Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sp24-finalproject-teamorange:testIamPermissions x-goog-quota-user=projects/sp24-finalproject-teamorange
+[debug] [2024-04-19T16:50:16.360Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sp24-finalproject-teamorange:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-04-19T16:50:16.454Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sp24-finalproject-teamorange:testIamPermissions 403
+[debug] [2024-04-19T16:50:16.455Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sp24-finalproject-teamorange:testIamPermissions {"error":{"code":403,"message":"Cloud Resource Manager API has not been used in project sp24-finalproject-teamorange before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=sp24-finalproject-teamorange then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=sp24-finalproject-teamorange"}]},{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"service":"cloudresourcemanager.googleapis.com","consumer":"projects/sp24-finalproject-teamorange"}}]}}
+[debug] [2024-04-19T16:50:16.455Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 403, Cloud Resource Manager API has not been used in project sp24-finalproject-teamorange before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=sp24-finalproject-teamorange then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[debug] [2024-04-19T16:50:16.456Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/sp24-finalproject-teamorange/serviceAccounts/sp24-finalproject-teamorange@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-04-19T16:50:16.456Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/sp24-finalproject-teamorange/serviceAccounts/sp24-finalproject-teamorange@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-04-19T16:50:16.688Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/sp24-finalproject-teamorange/serviceAccounts/sp24-finalproject-teamorange@appspot.gserviceaccount.com:testIamPermissions 404
+[debug] [2024-04-19T16:50:16.688Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/sp24-finalproject-teamorange/serviceAccounts/sp24-finalproject-teamorange@appspot.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2024-04-19T16:50:16.689Z] [functions] service account IAM check errored, deploy may fail: HTTP Error: 404, Unknown service account {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"HTTP Error: 404, Unknown service account","status":404}
+[info] 
+[info] === Deploying to 'sp24-finalproject-teamorange'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-04-19T16:50:16.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sp24-finalproject-teamorange [none]
+[debug] [2024-04-19T16:50:16.755Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sp24-finalproject-teamorange 403
+[debug] [2024-04-19T16:50:16.755Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sp24-finalproject-teamorange {"error":{"code":403,"message":"Firebase Management API has not been used in project sp24-finalproject-teamorange before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=sp24-finalproject-teamorange then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=sp24-finalproject-teamorange"}]},{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"service":"firebase.googleapis.com","consumer":"projects/sp24-finalproject-teamorange"}}]}}
+[debug] [2024-04-19T16:50:16.755Z] HTTP Error: 403, Firebase Management API has not been used in project sp24-finalproject-teamorange before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=sp24-finalproject-teamorange then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[debug] [2024-04-19T16:50:16.756Z] FirebaseError: HTTP Error: 403, Firebase Management API has not been used in project sp24-finalproject-teamorange before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=sp24-finalproject-teamorange then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at responseToError (/usr/local/nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/apiv2.js:297:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project sp24-finalproject-teamorange. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-04-20T02:15:20.189Z] ----------------------------------------------------------------------
+[debug] [2024-04-20T02:15:20.191Z] Command:       /usr/local/nvm/versions/node/v20.11.1/bin/node /usr/local/nvm/versions/node/v20.11.1/bin/firebase login
+[debug] [2024-04-20T02:15:20.192Z] CLI Version:   13.5.2
+[debug] [2024-04-20T02:15:20.192Z] Platform:      linux
+[debug] [2024-04-20T02:15:20.192Z] Node Version:  v20.11.1
+[debug] [2024-04-20T02:15:20.192Z] Time:          Sat Apr 20 2024 02:15:20 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-04-20T02:15:20.192Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=423779516&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...

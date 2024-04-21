@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVT - Result</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IRA RESULT PAGE</h1>
+        </header>
+        <main>
+            <div class="result-section">
+                <h2>Vehicle Name: <span id="vehicle-name">XXXXXX XxxX5</span></h2>
+                <div class="eligibility">Eligibility: <span id="eligibility-status">Eligible for $7,500 tax credit</span></div>
+                <h3>Reasons:</h3>
+                <ul id="eligibility-reasons">
+                    <!-- These list items will be populated based on eligibility logic -->
+                    <li>Battery manufactured in North America</li>
+                    <li>Critical minerals sourced from compliant countries</li>
+                </ul>
+                <div id="map"></div>
+                <img id="car-image" src="js/car_placeholder.png" alt="Car Image">
+            </div>
+            <div class="actions">
+                <button onclick="checkAnotherVehicle()">Check another Vehicle</button>
+                <button onclick="returnToHomePage()">Return to Home Page</button>
+            </div>
+        </main>
+        <footer>
+            <p>Contact | Privacy Policy | Terms of Service</p>
+        </footer>
+    </div>
+    <!-- Include the Google Maps API script here -->
+    <script src="js/result.js"></script>
+</body>
+</html>

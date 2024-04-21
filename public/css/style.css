@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #00b4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.upload-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 2em;
+    flex-grow: 1;
+    margin-right: 1em; /* Separation between upload section and aside */
+}
+
+.upload-section h2 {
+    color: #333;
+    font-weight: normal;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00b4ff; /* Electric blue for techy feel */
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #006fd6; /* Slightly darker blue for the effect */
+    transition: all 0.5s;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button:hover, button:focus {
+    background-color: #0099ff; /* Lighter blue for hover state */
+    border-color: #fff; /* White border */
+    box-shadow: 0 0 20px #00b4ff, 0 0 30px #00b4ff; /* Glowing effect */
+    outline: none;
+}
+
+aside {
+    max-width: 50%; /* Limit the width of aside */
+}
+
+aside img {
+    max-width: 100%; /* Make image responsive within the aside */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer p {
+    font-size: 0.8em;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Ensure that all parts of your design work together cohesively */

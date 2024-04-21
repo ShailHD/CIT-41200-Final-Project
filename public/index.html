@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVT - CES</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>EVT - CES</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <section class="upload-section">
+                <div class="text-and-form">
+                    <h2>Discover Your Electric Vehicle Tax Credit Eligibility</h2>
+                    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                        <input type="file" id="file-upload" name="file" accept=".pdf">
+                        <button type="submit">Upload</button>
+                    </form>
+                    <p>Please upload a PDF version of the Electric Vehicle Information Document</p>
+                </div>
+            </section>
+            <aside>
+                <!-- The image will be served from the public directory -->
+                <img src="ev_image.png" alt="Electric Vehicle Illustration">
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>Contact | Privacy Policy | Terms of Service</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
