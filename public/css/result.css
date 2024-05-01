@@ -1,79 +1,81 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #007BFF; /* Updated to a sleek blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-    max-width: 900px;
-    margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    background-color: #1a73e8;
-    color: white;
-    padding: 20px 0;
     text-align: center;
-}
-
-main {
-    text-align: center;
-}
-
-.result-section {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
-}
-
-h2, .eligibility {
-    margin: 10px 0;
+    background-color: white;
+    margin: auto;
+    width: 80%; /* Centered container */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 960px; /* Max width for larger screens */
 }
 
 #map {
-    height: 250px; /* Adjust as necessary */
     width: 100%;
-    margin: 20px 0;
-    background-color: #e9e9e9; /* Placeholder color */
-    position: relative; /* For the map marker to be positioned */
-}
-
-/* Placeholder for the map marker */
-#map:before {
-    content: '📍';
-    font-size: 2rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#car-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.actions button {
-    padding: 10px 20px;
+    height: 500px; /* Larger map area */
     margin-top: 20px;
-    margin-right: 20px;
-    background-color: #4285f4;
-    color: white;
+    border-radius: 8px;
+}
+
+select, button {
+    padding: 12px 20px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.actions button:hover {
-    background-color: #3069f0;
+select {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
 }
 
-footer {
+button {
+    background-color: #28a745; /* Green for positive action */
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker on hover */
+}
+
+#qualificationMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #dc3545; /* Red for attention */
+}
+
+#backButton {
+    background-color: #6c757d; /* Neutral dark back button */
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    padding: 10px 0;
-    background-color: #f1f1f1;
-    font-size: 0.8em;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
-/* You can add more CSS rules to better match your design */
+#backButton:hover {
+    background-color: #5a6268;
+}

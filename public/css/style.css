@@ -97,7 +97,7 @@ aside {
 }
 
 aside img {
-    max-width: 100%; /* Make image responsive within the aside */
+    max-width: 100%; /* This will Make image responsive within the aside */
     height: auto; /* Maintain aspect ratio */
 }
 
